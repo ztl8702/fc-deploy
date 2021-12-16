@@ -323,7 +323,10 @@ export default class FcDeployComponent {
   }
 
   async help(): Promise<void> {
-    await this.report('fc-deploy', 'help', null, null);
+    core.reportComponent('fc-deploy', {
+      command: 'help',
+      uid: null,
+    });
     core.help(COMPONENT_HELP_INFO);
   }
 
