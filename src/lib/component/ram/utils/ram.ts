@@ -40,7 +40,7 @@ export default class R {
   constructor(profile: ICredentials) {
     let timeout = 10;
     if (process.env.ALIYUN_RAM_CLIENT_TIMEOUT) {
-      timeout = parseInt(process.env.ALIYUN_RAM_CLIENT_TIMEOUT);
+      timeout = parseInt(process.env.ALIYUN_RAM_CLIENT_TIMEOUT, 10);
     }
 
     this.ramClient = new Ram({

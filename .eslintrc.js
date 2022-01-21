@@ -8,6 +8,7 @@ module.exports = {
   rules: {
     'no-await-in-loop': 'off',
     'max-len': 'off',
+    'require-atomic-updates': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/member-ordering': 'off',
     'no-param-reassign': 'off',

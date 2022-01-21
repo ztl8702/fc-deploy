@@ -51,7 +51,7 @@ export default class HandlerService {
   getPopClient(endpoint: string, apiVersion: string, profile: ICredentials) {
     let timeout = 10;
     if (process.env.ALIYUN_RAM_CLIENT_TIMEOUT) {
-      timeout = parseInt(process.env.ALIYUN_RAM_CLIENT_TIMEOUT);
+      timeout = parseInt(process.env.ALIYUN_RAM_CLIENT_TIMEOUT, 10);
     }
 
     return new Pop({
